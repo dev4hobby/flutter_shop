@@ -25,10 +25,8 @@ class Body extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
               child: GridView.builder(
-                itemCount: 6, // 길이를 안넣어주면 무한대로 생성됨 ㅎㅎ;
+                itemCount: products.length,
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                  // Delegate가 있다..
-                  // 그리드 요소들은 여기서 지정된 크기를 가지도록 강제됨.
                   crossAxisCount: 2,
                   mainAxisSpacing: defaultPadding,
                   crossAxisSpacing: defaultPadding,
